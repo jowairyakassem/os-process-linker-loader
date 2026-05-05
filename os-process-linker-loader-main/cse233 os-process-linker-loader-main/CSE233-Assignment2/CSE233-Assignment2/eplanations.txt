@@ -1,0 +1,40 @@
+Operating Systems (CSE233) - Assignment 2:-
+
+Explanation of Lab 5 Exercises:
+
+Exercise 1: Using fork() in C
+This exercise uses the fork() system call to create a new process. When fork() is called, the system creates an identical copy of the running process.
+This results in two processesL the original parent and the new child.
+- The child process receives a return value of 0.
+- The parent process receives the Process ID (PID) of the new child.
+
+Exercise 2: Starting Process in the Background
+This shows how to run a program in the background. A background process runs independently, allowing the terminal to remain free for new commands.
+The jobs command is used to see a list of these background processes.
+
+Exercise 3: Stopping Processes
+To stop a process, you must know its Process ID (PID).
+We find PID using this command: ps aux | grep sleep, and then use the kill command with the PID.
+
+Exercise 4: Pausing and Resuming a Process
+This demonstrates using control signals to manage a running process.
+- Pause (Stop): Use 'kill -STOP <PID>' command.
+- Resume (Continue): Use the kill -CONT <PID> command.
+
+Exercise 5: Role of the Linker
+The Linker takes separate object files (file1jk.c & file2jk.c) and connects them.
+Its main job is to resolve references, such as connecting the 'hello()' function call in one file to the acrual code definition in the other, creating a single Executable file.
+
+Exercise 6: Role of the Loader
+The Loader takes the Executable file and prepares it for running. Its job is to move the program's instructions and data into Memory.
+It also uses the 'ldd' command to identify and load any necessary shared libraries just before the program starts execution.
+
+
+Explain the Job of the Linker & the Loader:
+The sequence for turning code into a runnong program is: Source Code -> Translator -> Object Code -> Linker -> Executable file -> Loader -> Memory.
+
+Linker: Responsible for combining one or more Object Code files into a single Wxecutable file.
+It ensures all parts of the program, even if written in separate files, can correctly communicate with each other.
+
+Loader: A fundamental operating system prodram that prepares the Executable file to run.
+Its job is to take the executable, move it into the computer's Memory, and handle all setup so the CPU can start executing the program's instructions.
