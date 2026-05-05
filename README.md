@@ -1,5 +1,5 @@
 # 1. Project Title: Unix Process Management and Executable Lifecycle Demonstration
-# For CSE233: Operating Systems - Assignment 2 (Lab 5)
+## For CSE233: Operating Systems - Assignment 2 (Lab 5)
 
 ## 2. Description
 This project contains C source files and a custom Makefile demonstrating fundamental Operating Systems concepts, specifically focused on **Unix Process Management** (creation, backgrounding, control) and the **Executable Creation Pipeline** (the distinct roles of the Linker and the Loader).
